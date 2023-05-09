@@ -1,0 +1,35 @@
+.Item{
+    border-bottom: solid 2px #820f0f;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.Item div{
+   flex: 1;
+}
+.PriceAmount{
+    display: flex;
+    gap: 10px;
+}
+.Price{
+    font-weight: 700;
+    color: rgb(202, 77, 4);
+}
+.Amount{
+    font-weight: 700;
+}
+.Item div h4{
+    margin: 0;
+ }
+ .buttons{
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: white;
+    border: solid 2px #450707;
+    color: #450707;
+ }
+ .buttons:hover{
+    background-color: #450707;
+    color: white;
+ }

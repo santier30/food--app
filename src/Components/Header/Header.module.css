@@ -1,0 +1,112 @@
+.Head{
+    
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    color: white;
+}
+.Head h1{
+    flex: 1;
+    margin-left: 12px;
+}
+.Head Button{
+    position: relative;
+    padding:0 30px;
+    font-size: 16px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+
+    
+}
+.Head div {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation-duration: 1s;
+    animation-name: buttonPress;
+    background-color: rgb(95, 25, 25);
+    border-radius: 20px 20px 20px 20px;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.Add {
+    animation-play-state: running;
+  }
+.icon{
+    height: fit-content;
+    padding: 0 0 0 15px;
+}
+.Head Button p{
+    height: fit-content;
+    
+}
+.cont{
+   padding: 4px 8px;
+   border-radius: 40%;
+    background-color: rgb(203, 31, 31);
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .Head h1{
+        margin-left: 62px;
+    }
+    .Head Button{
+       margin-right: 62px;
+       ;
+    }
+}
+@media screen and (max-width: 500px){
+    .Head{
+        max-height: 54px;
+    }
+    .Head h1{
+        
+        margin-left: 12px;
+        font-size: 20px;
+    }
+    .Head Button {
+       margin-right: 12px;
+       font-size: 10px;
+       padding: 0;
+     
+    }
+    
+    
+    .cont{
+        padding: 2px 5px;
+       margin-right: 5px;
+     }
+}
+@keyframes buttonPress {
+    0% {
+        padding:0px;
+
+    }
+    50%{
+        padding:10px;
+
+    }
+    75%{
+        padding:2px;
+
+      }
+      90%{
+        padding:5px;
+
+      }
+    100%{
+        padding:0;
+
+      }
+  }

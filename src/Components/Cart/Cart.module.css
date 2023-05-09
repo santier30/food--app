@@ -1,0 +1,61 @@
+.back{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.808);
+    z-index: 4;
+    position : fixed;
+    width: 100%;
+    height: 100%;
+    align-items:first baseline;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart{
+    top: 20%;
+    z-index: 5;
+    background-color: white;
+    position: fixed;
+}
+.cont{
+    margin: 0;
+    padding: 10px;
+}
+.UlCont{
+    display: flex;;
+}
+.UlCont h2{
+    flex: 1;
+}
+.TotalCont {
+    display: flex;
+    flex-direction: column;
+   
+}
+.TotalCont h2{
+    align-self: flex-end;
+   
+}
+.buttonsCont{
+    display: flex;
+    gap: 8px;
+}
+.close{
+   
+    background-color: white;
+    border: solid 1px #450707;
+    color: #450707;
+ }
+ .close:hover{
+    background-color: #450707;
+    color: white;}
+    .order{
+        border: solid 1px #450707;
+    }
+    @media screen and (max-width: 500px){
+        .buttonsCont{
+            flex-direction: column;
+        }
+    }
